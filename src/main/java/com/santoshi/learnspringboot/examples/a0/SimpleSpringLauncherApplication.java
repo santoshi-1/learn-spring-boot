@@ -9,9 +9,9 @@ import java.util.Arrays;
 
 @Configuration
 @ComponentScan
-public class DepInjectionLauncherApplication {
+public class SimpleSpringLauncherApplication {
     public static void main(String args[]) {
-        var context = new AnnotationConfigApplicationContext(DepInjectionLauncherApplication.class);
+        var context = new AnnotationConfigApplicationContext(SimpleSpringLauncherApplication.class);
         Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
     }
 }
